@@ -49,10 +49,10 @@ class getAQSAPI:
         sampleData/byState	                param, bdate, edate, state                  (Optional: cbdate, cedate)
         sampleData/byCBSA	                param, bdate, edate, cbsa                   (Optional: cbdate, cedate)
         
-        dailyData/bySite	                    param, bdate, edate, state, county, site    (Optional: cbdate, cedate)
+        dailyData/bySite	                param, bdate, edate, state, county, site    (Optional: cbdate, cedate)
         dailyData/byCounty	                param, bdate, edate, state, county          (Optional: cbdate, cedate)
         dailyData/byState	                param, bdate, edate, state                  (Optional: cbdate, cedate)
-        dailyData/byCBSA	                    param, bdate, edate, cbsa                   (Optional: cbdate, cedate)
+        dailyData/byCBSA	                param, bdate, edate, cbsa                   (Optional: cbdate, cedate)
         
         annualData/bySite	                param, bdate, edate, state, county, site    (Optional: cbdate, cedate)
         annualData/byCounty	                param, bdate, edate, state, county          (Optional: cbdate, cedate)
@@ -61,7 +61,7 @@ class getAQSAPI:
     
         monitors/bySite	                    param, bdate, edate, state, county, site
         monitors/byCounty	                param, bdate, edate, state, county
-        monitors/byState	                    param, bdate, edate, state
+        monitors/byState	                param, bdate, edate, state
         monitors/byCBSA	                    param, bdate, edate, cbsa
         -------------------------------------------------------------
     """
