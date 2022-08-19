@@ -169,17 +169,15 @@ class getAQSAPI:
             json_data = json.loads(response.content)['Data']
             df = pd.DataFrame.from_records(json_data)
             
-            # Including downlaod datetime
-            datenow = datetime.datetime.now()
-            datenow = datenow.strftime("%Y-%m-%d %H:%M:%S")
-            df['download_datetime'] = datenow
-            
             # Status message
             json_header = json.loads(response.content)['Header']
             if (json_header[0]['status'] == 'Failed'):
                 print('---: Job Status: %s; Error: %s :---' % (json_header[0]['status'],json_header[0]['error']))
             else:
                 print('---: Job Status: %s; Rows: %s :---' % (json_header[0]['status'],json_header[0]['rows']))
+            
+            # Including downlaod datetime
+            df['download_datetime'] = json_header[0]['request_time']
             
             #
             return df
